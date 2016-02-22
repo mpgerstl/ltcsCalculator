@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level2" level="2" version="1">
+  <model id="Ecoli_ppp_toy_model" name="Ecoli_ppp_toy_model">
+    <listOfCompartments>
+      <compartment id="C_c" name="Cytoplasm"/>
+      <compartment id="C_b" name="External"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="a" name="a" compartment="C_c">
+      </species>
+      <species id="a_b" name="a" compartment="C_b">
+      </species>
+      <species id="b" name="b" compartment="C_c">
+      </species>
+      <species id="c" name="c" compartment="C_c">
+      </species>
+      <species id="d" name="d" compartment="C_c">
+      </species>
+      <species id="e" name="e" compartment="C_c">
+      </species>
+      <species id="f" name="f" compartment="C_c">
+      </species>
+      <species id="f_b" name="f" compartment="C_b">
+      </species>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="R_1" name="R_1" reversible="true">
+        <listOfReactants>
+          <speciesReference species="a"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="b"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R_2" name="R_2" reversible="true">
+        <listOfReactants>
+          <speciesReference species="a"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="c"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R_3" name="R_3" reversible="true">
+        <listOfReactants>
+          <speciesReference species="c"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="b"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R_4" name="R_4" reversible="true">
+        <listOfReactants>
+          <speciesReference species="b"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="d"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R_5" name="R_5" reversible="true">
+        <listOfReactants>
+          <speciesReference species="c"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="e"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R_6" name="R_6" reversible="true">
+        <listOfReactants>
+          <speciesReference species="d"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="e"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R_7" name="R_7" reversible="true">
+        <listOfReactants>
+          <speciesReference species="d"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="f"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R_8" name="R_8" reversible="true">
+        <listOfReactants>
+          <speciesReference species="e"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="f"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R_EX_a" name="R_EX_a" reversible="true">
+        <listOfReactants>
+          <speciesReference species="a"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="a_b"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R_EX_f" name="R_EX_f" reversible="true">
+        <listOfReactants>
+          <speciesReference species="f"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="f_b"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

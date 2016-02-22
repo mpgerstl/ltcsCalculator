@@ -1,0 +1,3 @@
+CPLEX Parameter File Version 12.6.0.0
+CPX_PARAM_TILIM                  3.00000000000000e+02   
+CPX_PARAM_THREADS                4
