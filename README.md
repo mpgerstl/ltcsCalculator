@@ -3,6 +3,13 @@
 ltcsCalculator provides tools to find largest thermodynamic consistent sets of
 EFMs.
 
+If you use this software please cite 
+
+> Matthias P. Gerstl, Christian Jungreuthmayer, Stefan Müller, and Jürgen
+> Zanghellini. (2016), Which sets of elementary flux modes form
+> thermodynamically feasible flux distributions?. FEBS J, 283: 1782–1794.
+> doi:10.1111/febs.13702
+
 ## Table of Contents
 
 [Installation](#Installation)
